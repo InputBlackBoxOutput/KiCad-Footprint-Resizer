@@ -1,7 +1,7 @@
 # KiCad-Footprint-Resizer
 Application to resize KiCad footprints built using Streamlit
 
-URL: https://inputblackboxoutput-kicad-footprint-resizer-app-bj5g74.streamlitapp.com/
+URL: https://kicad-footprint-resizer.streamlit.app/
 
 |Library footprint|Image Convertor generated footprint|Custom footprint|
 |--|--|--|
