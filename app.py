@@ -5,6 +5,16 @@ st.set_page_config(page_title='KiCad Footprint Resizer',
                    page_icon='🛠️', layout='centered')
 st.title("KiCad Footprint Resizer")
 
+st.markdown(
+    """## How to use this tool?
+1. Upload the KiCad footprint file.
+2. Enter the scale factor and click on the Resize button.
+3. Click on the download button to download the resized footprint.
+"""
+)
+
+st.image("illustration.png", use_column_width=True)
+
 footprint = st.file_uploader("Upload footprint file", type=['kicad_mod'])
 
 if footprint is not None:
