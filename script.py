@@ -1,6 +1,7 @@
 import sys
 import re
 
+scale = 1.0
 
 def scale_start(val):
     x = float(val.group(1)) * scale
@@ -82,7 +83,10 @@ def process_line(line):
 
 
 if __name__ == "__main__":
+    # Set scale factor
     scale = float(sys.argv[3])
+
+    # Process the kicad_mod file
     with open(sys.argv[1], 'r') as in_file, open(sys.argv[2], 'w', newline='') as out_file:
         for line in in_file:
             out_file.write(process_line(line))
